@@ -19,6 +19,7 @@ import PostBanner from '@/layouts/PostBanner'
 import { Metadata } from 'next'
 import siteMetadata from '@/data/siteMetadata'
 import { notFound } from 'next/navigation'
+import { trackingLink } from '../../../variables'
 
 const defaultLayout = 'PostLayout'
 const layouts = {
@@ -121,8 +122,19 @@ export default async function Page({ params }: { params: { slug: string[] } }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Layout content={mainContent} authorDetails={authorDetails} next={next} prev={prev}>
+        <div className="mb-8">
+          <a
+            className="mb-8"
+            href={`https://scripts.affiliatefuture.com/AFClick.asp?affiliateID=351604&merchantID=7042&programmeID=24815&mediaID=-1&tracking=&url=${post.productUrl}`}
+          >
+            Buy this whisky on Master of Malts
+          </a>
+        </div>
         <MDXLayoutRenderer code={post.body.code} components={components} toc={post.toc} />
+        <a href={`${trackingLink}{post.productUrl}`}>Buy this whisky on Master of Malts</a>
       </Layout>
+
+      <p>*Note discounts are time limited this code may have run out</p>
     </>
   )
 }
