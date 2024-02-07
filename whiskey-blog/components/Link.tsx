@@ -9,7 +9,6 @@ const CustomLink = ({ href, ...rest }: LinkProps & AnchorHTMLAttributes<HTMLAnch
   const isAnchorLink = href && href.startsWith('#')
   // construct full url for internal links by using the new URL and current location
   const origin = process.env.NEXT_PUBLIC_URL
-  console.log('origin', origin)
   const link = origin + href
   const url = link.toString()
   if (isInternalLink) {

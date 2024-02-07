@@ -138,6 +138,12 @@ export default function ListLayoutWithTags({
                             <Link href={`/${path}`} className="text-gray-900 dark:text-gray-100">
                               {title}
                             </Link>
+                            <a
+                              href={`/${path}`}
+                              className="invisible absolute left-[-100px] z-[-2]  h-0 h-0 text-gray-900 dark:text-gray-100"
+                            >
+                              {title}
+                            </a>
                           </h2>
                           <div className="flex flex-wrap">
                             {tags?.map((tag) => <Tag key={tag} text={tag} />)}

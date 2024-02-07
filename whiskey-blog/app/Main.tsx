@@ -42,6 +42,12 @@ export default function Home({ posts }) {
                             >
                               {title}
                             </Link>
+                            <a
+                              href={`/blog/${slug}`}
+                              className="invisible absolute left-[-100px] z-[-2]  h-0 h-0 text-gray-900 dark:text-gray-100"
+                            >
+                              {title}
+                            </a>
                           </h2>
                           <div className="flex flex-wrap">
                             {tags.map((tag) => (
