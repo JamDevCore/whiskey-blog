@@ -6,7 +6,7 @@ const siteMetadata = {
   description: 'A blog about the finest golden liquid on earth',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://iandrinkswhisky.com',
+  siteUrl: 'https://iandrinkswhisky.blog',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/logo.png',
   socialBanner: '/static/images/twitter-card.png',
