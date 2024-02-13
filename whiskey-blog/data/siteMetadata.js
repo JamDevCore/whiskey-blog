@@ -2,7 +2,7 @@
 const siteMetadata = {
   title: 'Ian Drinks Whisky',
   author: 'Ian Altman',
-  headerTitle: 'Ian Drinks Whisky: Reviews and more',
+  headerTitle: 'Ian Drinks Whisky',
   description:
     'From enthusiasts to afficonados. My blog rewiews 100s of whiskies and discusses everything there is to discuss about the finest drink on the planet',
   language: 'en-us',
