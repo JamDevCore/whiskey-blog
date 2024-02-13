@@ -2,8 +2,9 @@
 const siteMetadata = {
   title: 'Ian Drinks Whisky',
   author: 'Ian Altman',
-  headerTitle: 'Ian Drinks Whisky',
-  description: 'A blog about the finest golden liquid on earth',
+  headerTitle: 'Ian Drinks Whisky: Reviews and more',
+  description:
+    'From enthusiasts to afficonados. My blog rewiews 100s of whiskies and discusses everything there is to discuss about the finest drink on the planet',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://iandrinkswhisky.blog',
